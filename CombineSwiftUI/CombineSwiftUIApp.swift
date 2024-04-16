@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct CombineSwiftUIApp: App {
+   
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack{
+                ContentView(taskModel: TaskListModel())
+            }
         }
     }
 }

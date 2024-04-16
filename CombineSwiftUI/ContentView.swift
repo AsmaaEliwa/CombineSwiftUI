@@ -8,17 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var taskModel:TaskListModel
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            List{
+                ForEach(taskModel.tasks.value,id:\.self){task in
+                    Text(task)
+                }
+            }
+            NavigationLink(destination: AddNewTaskView(taskModel: taskModel)){
+               
+                    Image(systemName: "plus")
+                
+            }
         }
         .padding()
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView(taskModel: TaskListModel())
 }

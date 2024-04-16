@@ -11,6 +11,8 @@
 		7F8E80092BCEE12B00527EC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E80082BCEE12B00527EC6 /* ContentView.swift */; };
 		7F8E800B2BCEE12D00527EC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F8E800A2BCEE12D00527EC6 /* Assets.xcassets */; };
 		7F8E800E2BCEE12D00527EC6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F8E800D2BCEE12D00527EC6 /* Preview Assets.xcassets */; };
+		7F8E80152BCF08BF00527EC6 /* TaskListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E80142BCF08BF00527EC6 /* TaskListModel.swift */; };
+		7F8E80172BCF0A2500527EC6 /* AddNewTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E80162BCF0A2500527EC6 /* AddNewTaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		7F8E80082BCEE12B00527EC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7F8E800A2BCEE12D00527EC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F8E800D2BCEE12D00527EC6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7F8E80142BCF08BF00527EC6 /* TaskListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListModel.swift; sourceTree = "<group>"; };
+		7F8E80162BCF0A2500527EC6 /* AddNewTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewTaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 				7F8E80082BCEE12B00527EC6 /* ContentView.swift */,
 				7F8E800A2BCEE12D00527EC6 /* Assets.xcassets */,
 				7F8E800C2BCEE12D00527EC6 /* Preview Content */,
+				7F8E80142BCF08BF00527EC6 /* TaskListModel.swift */,
+				7F8E80162BCF0A2500527EC6 /* AddNewTaskView.swift */,
 			);
 			path = CombineSwiftUI;
 			sourceTree = "<group>";
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F8E80172BCF0A2500527EC6 /* AddNewTaskView.swift in Sources */,
+				7F8E80152BCF08BF00527EC6 /* TaskListModel.swift in Sources */,
 				7F8E80092BCEE12B00527EC6 /* ContentView.swift in Sources */,
 				7F8E80072BCEE12B00527EC6 /* CombineSwiftUIApp.swift in Sources */,
 			);
