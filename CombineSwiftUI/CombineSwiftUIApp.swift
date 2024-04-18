@@ -13,7 +13,9 @@ struct CombineSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationStack{
-                ContentView(taskModel: TaskListModel())
+                ContentView(taskModel: TaskListModel()).onAppear(){
+                    run()
+                }
             }
         }
     }
