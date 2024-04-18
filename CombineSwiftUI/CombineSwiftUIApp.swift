@@ -13,9 +13,10 @@ struct CombineSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationStack{
-                ContentView(taskModel: TaskListModel()).onAppear(){
-                    run()
-                }
+//                ContentView(taskModel: TaskListModel()).onAppear(){
+//                    run()
+//                }
+                CitySwiftUIView(cityViewModel: CityViewModel())
             }
         }
     }

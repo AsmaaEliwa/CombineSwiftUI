@@ -14,6 +14,10 @@
 		7F8E80152BCF08BF00527EC6 /* TaskListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E80142BCF08BF00527EC6 /* TaskListModel.swift */; };
 		7F8E80172BCF0A2500527EC6 /* AddNewTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E80162BCF0A2500527EC6 /* AddNewTaskView.swift */; };
 		7F8E80192BD16A6C00527EC6 /* Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E80182BD16A6C00527EC6 /* Code.swift */; };
+		7F8E801B2BD1C18600527EC6 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E801A2BD1C18600527EC6 /* Network.swift */; };
+		7F8E801D2BD1C6FE00527EC6 /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E801C2BD1C6FE00527EC6 /* CityModel.swift */; };
+		7F8E801F2BD1C9E700527EC6 /* CityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E801E2BD1C9E700527EC6 /* CityViewModel.swift */; };
+		7F8E80212BD1CB0E00527EC6 /* CitySwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8E80202BD1CB0E00527EC6 /* CitySwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,10 @@
 		7F8E80142BCF08BF00527EC6 /* TaskListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListModel.swift; sourceTree = "<group>"; };
 		7F8E80162BCF0A2500527EC6 /* AddNewTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewTaskView.swift; sourceTree = "<group>"; };
 		7F8E80182BD16A6C00527EC6 /* Code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Code.swift; sourceTree = "<group>"; };
+		7F8E801A2BD1C18600527EC6 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		7F8E801C2BD1C6FE00527EC6 /* CityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
+		7F8E801E2BD1C9E700527EC6 /* CityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModel.swift; sourceTree = "<group>"; };
+		7F8E80202BD1CB0E00527EC6 /* CitySwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +72,10 @@
 				7F8E80142BCF08BF00527EC6 /* TaskListModel.swift */,
 				7F8E80162BCF0A2500527EC6 /* AddNewTaskView.swift */,
 				7F8E80182BD16A6C00527EC6 /* Code.swift */,
+				7F8E801A2BD1C18600527EC6 /* Network.swift */,
+				7F8E801C2BD1C6FE00527EC6 /* CityModel.swift */,
+				7F8E801E2BD1C9E700527EC6 /* CityViewModel.swift */,
+				7F8E80202BD1CB0E00527EC6 /* CitySwiftUIView.swift */,
 			);
 			path = CombineSwiftUI;
 			sourceTree = "<group>";
@@ -148,9 +160,13 @@
 			files = (
 				7F8E80172BCF0A2500527EC6 /* AddNewTaskView.swift in Sources */,
 				7F8E80152BCF08BF00527EC6 /* TaskListModel.swift in Sources */,
+				7F8E801B2BD1C18600527EC6 /* Network.swift in Sources */,
+				7F8E801F2BD1C9E700527EC6 /* CityViewModel.swift in Sources */,
 				7F8E80092BCEE12B00527EC6 /* ContentView.swift in Sources */,
+				7F8E80212BD1CB0E00527EC6 /* CitySwiftUIView.swift in Sources */,
 				7F8E80072BCEE12B00527EC6 /* CombineSwiftUIApp.swift in Sources */,
 				7F8E80192BD16A6C00527EC6 /* Code.swift in Sources */,
+				7F8E801D2BD1C6FE00527EC6 /* CityModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
