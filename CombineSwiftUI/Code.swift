@@ -48,6 +48,19 @@ func run(){
     publisherStr.send("Three")
     publisherInt.send(3)
     
+    
+    
+    let evenPublisher = [2,4,6,8,10].publisher
+    let oddPublisher = [1,3,5,7].publisher
+    Publishers.CombineLatest(evenPublisher, oddPublisher).sink(receiveValue: {even,odd in
+        print(even,odd)        //10 1   10 3   10 5     10 7
+
+    }).store(in: &cancellables)
+    
+    Publishers.Zip(evenPublisher,oddPublisher).sink { even ,odd  in
+        print(odd, even)   // 1 2     3 4   5 6   7 8
+    }.store(in: &cancellables)
+    
   
     
 }
