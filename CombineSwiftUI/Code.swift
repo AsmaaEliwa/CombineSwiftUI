@@ -21,4 +21,33 @@ func run(){
         .sink { value  in
 //            print(value)
         }.store(in: &cancellables)
+    
+    
+    let publisher = PassthroughSubject<String,Never>()
+    publisher.debounce(for: 0.5, scheduler: DispatchQueue.main)
+       .sink{value in
+           print(value)
+       }.store(in: &cancellables)
+   
+   publisher.send("A")
+   publisher.send("B")
+   publisher.send("C")  // will only print C
+    
+    
+    let publisherStr = PassthroughSubject<String,Never>()
+    let publisherInt = PassthroughSubject<Int,Never>()
+
+    publisherStr.zip(publisherInt).sink { value in
+        print(value)   // should print ("A",1 ) ("B",2 ) ("C",3 )
+    }.store(in: &cancellables)
+    
+    publisherStr.send("One")
+    publisherInt.send(1)
+    publisherStr.send("Two")
+    publisherInt.send(2)
+    publisherStr.send("Three")
+    publisherInt.send(3)
+    
+  
+    
 }
