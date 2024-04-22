@@ -57,10 +57,12 @@ func run(){
 
     }).store(in: &cancellables)
     
-    Publishers.Zip(evenPublisher,oddPublisher).sink { even ,odd  in
-        print(odd, even)   // 1 2     3 4   5 6   7 8
-    }.store(in: &cancellables)
+//    Publishers.Zip(evenPublisher,oddPublisher).sink { even ,odd  in
+//        print(odd, even)   // 1 2     3 4   5 6   7 8
+//    }.store(in: &cancellables)
     
-  
+    Publishers.Merge(evenPublisher, oddPublisher).sink { integer in
+        print(integer)
+    }.store(in: &cancellables)
     
 }
