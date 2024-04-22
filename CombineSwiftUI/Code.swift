@@ -61,8 +61,22 @@ func run(){
 //        print(odd, even)   // 1 2     3 4   5 6   7 8
 //    }.store(in: &cancellables)
     
-    Publishers.Merge(evenPublisher, oddPublisher).sink { integer in
-        print(integer)
+    Publishers.Merge(evenPublisher, oddPublisher).sink { integer in    // they have to be the same type
+        print("integers are \(integer)") //will print
+//        integers are 2
+//        integers are 4
+//        integers are 6
+//        integers are 8
+//        integers are 10
+//        integers are 1
+//        integers are 3
+//        integers are 5
+//        integers are 7
     }.store(in: &cancellables)
     
+}
+
+
+func evenPublisher()->some Publisher<Int,Never>{
+    [2,4,6,8].publisher
 }
